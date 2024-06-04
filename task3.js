@@ -3,7 +3,7 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
   // cek apakah nilai awal lebih kecil dari nilai akhir
   if (nilaiAwal < nilaiAkhir) {
     // cek apakah data array lebih sama dengan lima 
-    if (dataArray.length < 5) {
+    if (dataArray.length <= 5) {
       return "jumlah angka dalam data array harus lebih dari 5";
     }
       let array = [];
@@ -25,5 +25,5 @@ function seleksiNilai(nilaiAwal, nilaiAkhir, dataArray) {
     return "nilai akhir harus lebih besar dari nilai awal";
   }
 }
-const hasil = seleksiNilai(1, 7, [6, 2, 5, 8, 10]);
+const hasil = seleksiNilai(1, 7, [6, 2, 5, 8, 10, 4]);
 console.log(hasil);
